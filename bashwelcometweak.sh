@@ -166,3 +166,5 @@ function gui_bashwelcometweak() {
         esac
     fi
 }
+
+gui_bashwelcometweak
