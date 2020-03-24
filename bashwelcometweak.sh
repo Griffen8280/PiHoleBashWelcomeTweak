@@ -9,16 +9,15 @@
 # at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
 # Modified from the RetroPie project for PiHole
+# Also includes the logo for PiHole for a little personalization
 #
 
-rp_module_id="bashwelcometweak"
-rp_module_desc="Bash Welcome Tweak (shows additional system info on login)"
-rp_module_section="config"
+home=~/ # Primary home location
 
 function install_bashwelcometweak() {
     remove_bashwelcometweak
     cat >> "$home/.bashrc" <<\_EOF_
-# PiHole PROFILE START
+# PIHOLE PROFILE START
 
 function getIPAddress() {
     local ip_route
@@ -29,7 +28,7 @@ function getIPAddress() {
     [[ -n "$ip_route" ]] && grep -oP "src \K[^\s]+" <<< "$ip_route"
 }
 
-function retropie_welcome() {
+function pihole_welcome() {
     local upSeconds="$(/usr/bin/cut -d. -f1 /proc/uptime)"
     local secs=$((upSeconds%60))
     local mins=$((upSeconds/60%60))
@@ -84,7 +83,7 @@ function retropie_welcome() {
     local logo=(
         "${fgwht}@${bfggrn}(${fgwht}@@@@@@@@@@@@@@@@@@"
         "${fgwht}@${bfggrn}(((((((${fgwht}@@@@@@@@@@@@"
-        "${fgwht}@@${bfggrn}((((${fgred}%(${fggrn}/${fgwht}@@@${fggrn}////${fgwht}@@@@"
+        "${fgwht}@@${bfggrn}((((${fgred}%${bfggrn}(${fggrn}/${fgwht}@@@${fggrn}////${fgwht}@@@@"
         "${fgwht}@@@@@${bfggrn}(((${fgwht}@${fggrn}//////${fgwht}@@@@@"
         "${fgwht}@@@@@@@@@${fgred}%%%${fgwht}@@@@@@@@"
         "${fgwht}@@@@@@${fgred}%%%%%%%%${bfgred}&${fgwht}@@@@@"
@@ -136,15 +135,15 @@ function retropie_welcome() {
     echo -e "\n$out"
 }
 
-retropie_welcome
-# RETROPIE PROFILE END
+pihole_welcome
+# PIHOLE PROFILE END
 _EOF_
 
 
 }
 
 function remove_bashwelcometweak() {
-    sed -i '/RETROPIE PROFILE START/,/RETROPIE PROFILE END/d' "$home/.bashrc"
+    sed -i '/PIHOLE PROFILE START/,/PIHOLE PROFILE END/d' "$home/.bashrc"
 }
 
 function gui_bashwelcometweak() {
@@ -157,12 +156,12 @@ function gui_bashwelcometweak() {
     if [[ -n "$choice" ]]; then
         case "$choice" in
             1)
-                rp_callModule bashwelcometweak install
-                printMsgs "dialog" "Installed Bash Welcome Tweak."
+                install_bashwelcometweak
+                dialog --title Complete --msgbox "Installed Bash Welcome Tweak." 22 20
                 ;;
             2)
-                rp_callModule bashwelcometweak remove
-                printMsgs "dialog" "Removed Bash Welcome Tweak."
+                remove_bashwelcometweak
+                dialog --title Complete --msgbox "Removed Bash Welcome Tweak." 22 20
                 ;;
         esac
     fi
