@@ -157,11 +157,11 @@ function gui_bashwelcometweak() {
         case "$choice" in
             1)
                 install_bashwelcometweak
-                dialog --title Complete --msgbox "Installed Bash Welcome Tweak." 22 20
+                dialog --title Complete --msgbox "Installed Bash Welcome Tweak." 22 30
                 ;;
             2)
                 remove_bashwelcometweak
-                dialog --title Complete --msgbox "Removed Bash Welcome Tweak." 22 20
+                dialog --title Complete --msgbox "Removed Bash Welcome Tweak." 22 30
                 ;;
         esac
     fi
