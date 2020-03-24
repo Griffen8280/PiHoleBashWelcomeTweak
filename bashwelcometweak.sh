@@ -8,6 +8,8 @@
 # See the LICENSE.md file at the top-level directory of this distribution and
 # at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
+# Modified from the RetroPie project for PiHole
+#
 
 rp_module_id="bashwelcometweak"
 rp_module_desc="Bash Welcome Tweak (shows additional system info on login)"
@@ -16,7 +18,7 @@ rp_module_section="config"
 function install_bashwelcometweak() {
     remove_bashwelcometweak
     cat >> "$home/.bashrc" <<\_EOF_
-# RETROPIE PROFILE START
+# PiHole PROFILE START
 
 function getIPAddress() {
     local ip_route
@@ -80,19 +82,19 @@ function retropie_welcome() {
     local bfgwht="${bld}$(tput setaf 7)"
 
     local logo=(
-        "${fgred}   .***.   "
-        "${fgred}   ***${bfgwht}*${fgred}*   "
-        "${fgred}   \`***'   "
-        "${bfgwht}    |*|    "
-        "${bfgwht}    |*|    "
-        "${bfgred}  ..${bfgwht}|*|${bfgred}..  "
-        "${bfgred}.*** ${bfgwht}*${bfgred} ***."
-        "${bfgred}*******${fggrn}@@${bfgred}**"
-        "${fgred}\`*${bfgred}****${bfgylw}@@${bfgred}*${fgred}*'"
-        "${fgred} \`*******'${fgrst} "
-        "${fgred}   \`\"\"\"'${fgrst}   "
+        "${fgwht}@${bfggrn}(${fgwht}@@@@@@@@@@@@@@@@@@"
+        "${fgwht}@${bfggrn}(((((((${fgwht}@@@@@@@@@@@@"
+        "${fgwht}@@${bfggrn}((((${fgred}%(${fggrn}/${fgwht}@@@${fggrn}////${fgwht}@@@@"
+        "${fgwht}@@@@@${bfggrn}(((${fgwht}@${fggrn}//////${fgwht}@@@@@"
+        "${fgwht}@@@@@@@@@${fgred}%%%${fgwht}@@@@@@@@"
+        "${fgwht}@@@@@@${fgred}%%%%%%%%${bfgred}&${fgwht}@@@@@"
+        "${fgwht}@@@${fgred}%%%%%%%%%%%${bfgred}&&&&${fgwht}@@"
+        "${fgwht}@${bfgred}&&&&&&&${fgwht}@@${fgred}%${fgwht}@@${bfgred}&&&&&&&"
+        "${bfgred}&&&&&&&&${fgwht}@@@@@${bfgred}&&&&&&&"
+        "${fgwht}@${bfgred}&&&&&&&${fgwht}@${fgred}%%%${fgwht}@@${bfgred}&&&&&${fgred}%"
+        "${fgwht}@@@@${bfgred}&&&${fgred}%%%%%%%%%%${fgwht}@@@"
+        "${fgwht}@@@@@@${bfgred}&${fgred}%%%%%%%%${fgwht}@@@@@"
         )
-
     local out
     local i
     for i in "${!logo[@]}"; do
@@ -126,7 +128,7 @@ function retropie_welcome() {
                 out+="Temperature........: CPU: ${cpuTempC}°C/${cpuTempF}°F GPU: ${gpuTempC}°C/${gpuTempF}°F"
                 ;;
             10)
-                out+="${fgwht}The RetroPie Project, https://retropie.org.uk"
+                out+="${fgwht}The PiHole Project, https://pi-hole.net"
                 ;;
         esac
         out+="${rst}\n"
