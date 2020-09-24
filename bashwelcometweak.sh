@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-# This file is part of The RetroPie Project
+# This file is derived from part of The RetroPie Project
 #
 # The RetroPie Project is the legal property of its developers, whose names are
-# too numerous to list here. Please refer to the COPYRIGHT.md file distributed with this source.
+# too numerous to list here. Please refer to their COPYRIGHT.md file.
 #
-# See the LICENSE.md file at the top-level directory of this distribution and
-# at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
+# See the LICENSE.md file at the top-level directory of their distribution at
+# https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
 # Modified from the RetroPie project for PiHole
 # Also includes the logo for PiHole for a little personalization
