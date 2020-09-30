@@ -12,5 +12,5 @@ simple to install just execute this on the command line
 		<li>chmod +x bashwelcometweak.sh</li>
 		<li>./bashwelcometweak.sh</li>
 </ul>
-This will install the tweak for the user running it and contains much the same useful information as the RetroPie tweak
+This will install the tweak for the user running it and contains much of the same useful information as the RetroPie tweak
 with an updated PiHole logo in ascii art.
