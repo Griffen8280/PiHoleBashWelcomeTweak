@@ -8,18 +8,18 @@
 <a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Griffen8280/PiHoleBashWelcomeTweak?color=2b9348"></a>
 <a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Griffen8280/PiHoleBashWelcomeTweak?color=2b9348" alt="License Badge"/></a>
 
-A Bash Welcome Tweak similar to Retro-Pie for PiHole
+# A Bash Welcome Tweak similar to Retro-Pie for PiHole
 
 much of the code for this came from the orignal over at: https://github.com/retropie/RetroPie-Setup/blob/master/scriptmodules/supplementary/bashwelcometweak.sh  
 I only updated it with a new variable and changed many of the system call backs to work independantly instead of being a part of the
 overall menu system used by the RetroPie team.
 
-simple to install just execute this on the command line  
-<ul>
-		<li>git clone --depth=1 https://github.com/Griffen8280/PiHoleBashWelcomeTweak.git</li>
-		<li>cd PiHoleBashWelcomeTweak</li>
-		<li>chmod +x bashwelcometweak.sh</li>
-		<li>./bashwelcometweak.sh</li>
-</ul>
+# Installation 
+```
+git clone --depth=1 https://github.com/Griffen8280/PiHoleBashWelcomeTweak.git</li>
+cd PiHoleBashWelcomeTweak</li>
+chmod +x bashwelcometweak.sh</li>
+./bashwelcometweak.sh</li>
+```
 This will install the tweak for the user running it and contains much of the same useful information as the RetroPie tweak
 with an updated PiHole logo in ascii art.
