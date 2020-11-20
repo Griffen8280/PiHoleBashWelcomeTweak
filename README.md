@@ -8,7 +8,7 @@
 <a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Griffen8280/PiHoleBashWelcomeTweak?color=2b9348"></a>
 <a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Griffen8280/PiHoleBashWelcomeTweak?color=2b9348" alt="License Badge"/></a>
 
-# A Bash Welcome Tweak similar to Retro-Pie for PiHole
+# A Bash Welcome Tweak similar to Retro-Pie for PiHole</div>
 
 much of the code for this came from the orignal over at: https://github.com/retropie/RetroPie-Setup/blob/master/scriptmodules/supplementary/bashwelcometweak.sh  
 I only updated it with a new variable and changed many of the system call backs to work independantly instead of being a part of the
