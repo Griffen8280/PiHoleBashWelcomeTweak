@@ -1,11 +1,11 @@
 <h1 align="center">Pihole Bash Welcome Tweak</h1>
 <div align="center">
 
-<a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/stargazers"><img src="https://img.shields.io/github/stars/Griffen8280/PiHoleBashWelcomeTweak" alt="Stars Badge"/></a>
-<a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/network/members"><img src="https://img.shields.io/github/forks/Griffen8280/PiHoleBashWelcomeTweak" alt="Forks Badge"/></a>
-<a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/pulls"><img src="https://img.shields.io/github/issues-pr/Griffen8280/PiHoleBashWelcomeTweak" alt="Pull Requests Badge"/></a>
-<a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/issues"><img src="https://img.shields.io/github/issues/Griffen8280/PiHoleBashWelcomeTweak" alt="Issues Badge"/></a>
-<a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Griffen8280/PiHoleBashWelcomeTweak?color=2b9348"></a>
+<a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/stargazers"><img src="https://img.shields.io/github/stars/Griffen8280/PiHoleBashWelcomeTweak?style=plastic" alt="Stars Badge"/></a>
+<a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/network/members"><img src="https://img.shields.io/github/forks/Griffen8280/PiHoleBashWelcomeTweak?style=plastic" alt="Forks Badge"/></a>
+<a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/pulls"><img src="https://img.shields.io/github/issues-pr/Griffen8280/PiHoleBashWelcomeTweak?style=plastic" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/issues"><img src="https://img.shields.io/github/issues/Griffen8280/PiHoleBashWelcomeTweak?style=plastic" alt="Issues Badge"/></a>
+<a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Griffen8280/PiHoleBashWelcomeTweak?color=2b9348&style=plastic"></a>
 <a href="https://github.com/Griffen8280/PiHoleBashWelcomeTweak/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Griffen8280/PiHoleBashWelcomeTweak?color=2b9348&style=plastic" alt="License Badge"></a></div>
 
 # A Bash Welcome Tweak similar to Retro-Pie for PiHole
