@@ -12,6 +12,15 @@
 # Also includes the logo for PiHole for a little personalization
 #
 
+#Check for root and escalate if not
+if [ "$EUID" != 0 ]; then
+    sudo "$0" "$@"
+    exit $?
+fi
+
+#The menu system of this script relied on dialog, so we need to install it
+apt install dialog -y
+
 home=~/ # Primary home location
 
 function install_bashwelcometweak() {
