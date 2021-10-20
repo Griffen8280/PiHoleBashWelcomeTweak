@@ -16,10 +16,10 @@ overall menu system used by the RetroPie team.
 
 # Installation 
 ```
-git clone --depth=1 https://github.com/Griffen8280/PiHoleBashWelcomeTweak.git</li>
-cd PiHoleBashWelcomeTweak</li>
-chmod +x bashwelcometweak.sh</li>
-./bashwelcometweak.sh</li>
+git clone --depth=1 https://github.com/Griffen8280/PiHoleBashWelcomeTweak.git
+cd PiHoleBashWelcomeTweak
+chmod +x bashwelcometweak.sh
+./bashwelcometweak.sh
 ```
 This will install the tweak for the user running it and contains much of the same useful information as the RetroPie tweak
 with an updated PiHole logo in ascii art.
